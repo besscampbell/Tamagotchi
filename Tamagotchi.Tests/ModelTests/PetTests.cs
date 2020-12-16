@@ -14,5 +14,17 @@ namespace Tamagotchi.TestTools
       Pet gigaPet = new Pet("Brownie");
       Assert.AreEqual(typeof(Pet), gigaPet.GetType());
     }
+
+    [TestMethod]
+    public void GetName_ReturnName_String()
+    {
+      //Arrange
+      string name = "Brownie";
+      Pet gigaPet = new Pet(name);
+      //Act
+      string result = gigaPet.Name;
+      //Assert
+      Assert.AreEqual(name, result)
+    }
   }
 }
