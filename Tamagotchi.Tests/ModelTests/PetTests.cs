@@ -22,9 +22,9 @@ namespace Tamagotchi.TestTools
       string name = "Brownie";
       Pet gigaPet = new Pet(name);
       //Act
-      string result = gigaPet.Name;
+      string result = "Browni";
       //Assert
-      Assert.AreEqual(name, result)
+      Assert.AreEqual(gigaPet.Name, result);
     }
   }
 }
